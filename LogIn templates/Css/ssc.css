@@ -1,0 +1,67 @@
+body{
+	margin:0;
+	padding:0;
+	font:italic bold small-caps 16pt sans-serif;
+	background-color:#34495e;
+}
+
+.box{
+	
+	width:350px;
+	padding:40px;
+	text-align:center;
+	position:absolute;
+	top:55%;
+	left:50%;
+	background-color:#191919;
+	transform:translate(-50%,-50%);
+}
+
+.box h1{
+	
+	color:#bdc3c7;
+	font-weight:500px;
+}
+
+.box input[type="text"],.box input[type="password"]{
+	
+	background:none;
+	border:0;
+	display:block;
+	padding:14px 10px;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2980b9;
+	width:200px;
+	color:white;
+	border-radius:25px;
+	transition:0.25s;
+}
+
+.box input[type="text"]:hover,.box input[type="password"]:focus{
+	
+	border-color:#9b59b6;
+	width:300px;
+	
+}
+
+.box input[type="submit"]{
+	
+	background:none;
+	border:0;
+	display:block;
+	padding:14px 40px;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2980b9;
+	width:135px;
+	color:white;
+	border-radius:25px;
+	transition:0.25s;
+}
+
+.box input[type="submit"]:hover{
+	
+	width:150px;
+	border-color:#16a085;
+}
