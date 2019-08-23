@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="keywords" content="html eye follow css">
+	<meta name="viewport" content="width=device-width intial-scale=1">
+	<meta name="description" content="any thing to say but i dont have one">
+	<title>MoveTheCursor</title>
+	<link rel="stylesheet" href="eyeStyle.css">
+	<script type="text/javascript">
+	  var balls = document.getElementsByClassName("ball");
+	  document.onmousemove = function(){
+		
+		var x = event.clientX * 100 / window.innerWidth + "%";
+		var y = event.clientY * 100 / window.innerHeight + "%";
+		//event.clintX get the horizontal coordinate of mouse move 
+		//event.clintY get the vertical coordinate of mouse move
+		
+		//window.innerWidth get the browser width 
+		//window.innerHeight get the browser height
+		
+		
+		for(var i=0;i<2;i++){
+			balls[i].style.left=x;
+			balls[i].style.top=y;
+			balls[i].style.transform="translate(-"+x+",-"+y+")";
+		}
+	  }
+	</script>
+  </head>
+  <body>
+    <section class="eyes">
+	  <div class="eye">
+	    <div class="ball"></div>
+	  </div>
+	  
+	  <div class="eye">
+	    <div class="ball"></div>
+	  </div>
+	</section>
+  </body>
+</html>
